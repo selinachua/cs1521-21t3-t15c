@@ -1,3 +1,32 @@
 TOPICS:
 - decimal conversions
 - bitwise operations
+
+1 byte = 8 bits
+int num = 10;
+- 4 bytes = 4 * 8 = 32 bits 
+
+int num = 1; -> 1 bit
+
+NUMBER BASE SYSTEMS
+- decimal (base 10) -> 10 digits -> 0-9             300, 450
+- hexadecimal (base 16) -> 16 digits -> 0-9, A-F    0xF96A
+- binary (base 2) -> 2 digits -> 0,1                0101 1111
+- octal (base 8) -> 8 digits -> 0-7                 0744
+
+BIT MASKING 
+- extracting bits using AND &
+- settings bits using OR |
+0000 0000 --set the second bit--> 0100 0000
+
+EXTRACTING BITS:
+0100 1010
+0100 0000 &
+-----------
+0100 0000
+
+SETTING BITS:
+0100 1010
+0100 0000 | -> mask
+-------------
+0100 1010
