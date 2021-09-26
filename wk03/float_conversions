@@ -1,0 +1,48 @@
+IEEE Floating Point Representation
+float f  = 1.0; // single precision -> 32 bits 
+double d = 2.0; // double precision -> 64 bits 
+
+?    | ?        | ?
+0    | 01111111 | 10000000000000000000000
+
+FORMULA:
+???
+
+------------ IEEE -> float
+a) 0 01111111 10000000000000000000000
+sign     = ?
+exponent = ?
+fraction = ?
+
+
+b) 0 01111110 00000000000000000000000
+sign     = ?
+exponent = ?
+fraction = ?
+
+
+------------ float -> IEEE binary 
+Hints:
+2^(-1) = 0.5
+2^(-2) = 0.25
+2^(-3) = 0.125
+2^(-4) = 0.0625
+
+STEPS:
+1. Finding the biggest power of 2 that fits
+2. Convert into the formula
+3. Convert to binary 
+
+FORMULA:
+-1^sign * (1 + fraction) * 2^(exponent - 127)
+
+a) 2.5 = ?
+sign     = ?
+exponent = ?
+fraction = ?
+
+
+b) 0.375 =
+sign     = ?
+fraction = ?
+exponent = ?
