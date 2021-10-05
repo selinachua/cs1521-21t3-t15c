@@ -10,6 +10,18 @@ string0:
 	.asciiz	"Enter a number: "
 string1:
 	.asciiz	"Reverse order:\n"
+age:
+	.word 	20
+char:
+	.byte 	'a'
+
+# ######### TEXT SECTION
+# # string -> la 
+# 	la 	$t0, string0
+# # int -> lw
+# 	lw 	$t0, age
+# # byte -> lb
+# 	lb 	$t0, char 
 
 # And the other is TEXT
 # Contains our instructions and actual logic

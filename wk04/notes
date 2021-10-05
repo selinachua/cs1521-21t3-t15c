@@ -1,32 +1,63 @@
 ##### MIPS #####
+file.c -dcc-> ... -> file.s -> ... -> ./file
+
 ---- Registers
-$zero   -> 
-$v0, v1 -> 
-$a0-a3  -> 
-$t?     -> 
-$s?     -> 
-$ra     -> 
+variables in MIPS
+- in MIPS, there is a finite number of registers 
+
+$zero   -> for the value 0
+$v0, v1 -> to store results - function results
+$a0-a3  -> arguments - function arguments 
+$t?     -> general registers 
+$s?     -> general registers 
+$ra     -> return address 
 
 ---- Instructions
 MATH INSTRUCTIONS 
+$t2 = $t0 + $t1
+add     $t2, $t0, $t1 
 
+$t2 = $t0 + 10
+addi    $t2, $t0, 10
+add     $t2, $t0, 10
 
+$t2 = $t0 % $t1
+rem     $t2, $t0, $t1
 
 LOADING INSTRUCTIONS 
 put a value into a register 
 
-1. Loading an immediate value
+1. Loading an immediate value into a register
+$t0 = 0;
+li  $t0, 0      
 
+$t0 = '\n';
+li  $t0, '\n'
+
+WRONG:
+$t0 = $t1
+li  $t0, $t1 --> $t1 is NOT an immediate value 
 
 2. Loading from an address (data section)
+We use la, lb or lw.
+la -> loading the address -> 0xFFFF1234
+lb -> loading the byte AT the address -> 'a'
+lw -> loading the word AT the address -> 10
 
 
 3. Loading from another register
-
+$t0 = $t1
+move    $t0, $t1
 
 
 ---- System Calls
 Steps:
-1. 
-2. 
-3. 
+1. Load the correct code into $v0
+2. Load the correct arguments into $a? registers
+3. Call syscall
+
+printf("%d", 10);
+
+li  $v0, 1      # $v0 = 1
+li  $a0, 10     # $a0 = 10
+syscall

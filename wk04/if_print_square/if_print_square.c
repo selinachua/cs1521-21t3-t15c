@@ -7,6 +7,9 @@ int main(void) {
 
     if (x > 46340) {
         printf("square too big for 32 bits\n");
+        // if (x == 50000) {
+        //     printf("too big\n");
+        // }
     } else {
         y = x * x;
         printf("%d\n", y);
