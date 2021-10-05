@@ -1,0 +1,32 @@
+##### MIPS #####
+---- Registers
+$zero   -> 
+$v0, v1 -> 
+$a0-a3  -> 
+$t?     -> 
+$s?     -> 
+$ra     -> 
+
+---- Instructions
+MATH INSTRUCTIONS 
+
+
+
+LOADING INSTRUCTIONS 
+put a value into a register 
+
+1. Loading an immediate value
+
+
+2. Loading from an address (data section)
+
+
+3. Loading from another register
+
+
+
+---- System Calls
+Steps:
+1. 
+2. 
+3. 

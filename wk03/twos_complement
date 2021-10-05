@@ -1,23 +1,40 @@
 Finding two's complement representation of a number:
-1. 
-2. 
+1. flipping all the bits (0s become 1s and 1s become 0s)
+2. add 1 to the binary 
+
+1  -> 0001
+two's-complement ( 0001 ) -> binary representation of -1
+-1 -> 1111
+
 
 Q3. DECIMAL -> BINARY
 Give a representation for each of the following decimal values in 16-bit 
 twos-complement bit-strings. Show the value in binary, octal and hexadecimal.
-vi) -5 =
+vi)
+5 = 0000 0000 0000 0101
+two'scomplement(0000 0000 0000 0101) -> -5
+-5 = 1111 1111 1111 1011
+
+vii)
+100 = 0000 0000 0110 0100
+two'scomplement(0000 0000 0110 0100)
+-100 = 1111 1111 1001 1100
 
 
-vii) -100 =
-
-
-
-
-Q2. BINARY -> DECIMAL 
+Q2. HEX -> BINARY -> DECIMAL 
 Assume that the following hexadecimal values are 16-bit twos-complement. 
 Convert each to the corresponding decimal value.
 
-a) 0x0013 = 
+a) 0x0013 = 0000 0000 0001 0011
+          = 16 + 2 + 1 = 19
 
 
-d) 0xffff = 
+
+1. subtract 1
+2. flip all the bits
+d) 0xffff = 1111 1111 1111 1111
+          = 1111 1111 1111 1110
+          = 0000 0000 0000 0001 = 1
+          = -1
+
++ 1 -> flip bits -> add one ->  0xffff
