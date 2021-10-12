@@ -1,0 +1,22 @@
+Agenda (lots to go through this week!):
+- do-while loops
+- Data section - directives.s and memory.s 
+- Arrays in MIPS
+    - how to access elements in an array [print_array]
+    - how to store elements in an array [scan_array]
+- 2D arrays in MIPS 
+    - how to calculate offset for 2D arrays in MIPS [2d_array.s]
+- Functions in MIPS
+    - how to call a function 
+    - how to write a function
+    - stack frames 
+- Structs in MIPS 
+- Assignment 1 is out!
+
+STATIC ALLOCATION -> compile a C file, some variables are allocated 
+memory at compile time. They go into the data section.
+- global variables 
+- initialised arrays 
+- strings 
+
+gcc / dcc -> allocates some memory
