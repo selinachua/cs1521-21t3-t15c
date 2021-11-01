@@ -1,0 +1,10 @@
+FILES
+-> what's a file? 
+-> how to open & close a file 
+    -> fopen, fclose 
+    -> perror
+-> how to read/write from a file 
+    -> fputc, fgetc 
+    -> fgets, fputs 
+    -> fprintf, fscanf 
+-> stdin, stdout, stderr 
