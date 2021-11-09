@@ -1,0 +1,7 @@
+-> File metadata & stat
+    -> permissions
+    -> Q4,5
+    -> how to get info from stat
+-> Assignment 2
+
+char permissions[10] = "-rwxrwxr-x";
