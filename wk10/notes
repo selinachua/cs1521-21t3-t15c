@@ -1,0 +1,13 @@
+Content:
+- environment variables
+PATH = "a:b:c:d"
+a,b,c,d -> directory
+
+- what is a process?
+    - address space
+- what is physical memory?
+    - RAM
+    - frame table / inverted page table 
+- what is virtual memory?
+    - page table
+    - least recently used (LRU)
